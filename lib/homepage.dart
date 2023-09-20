@@ -1,3 +1,4 @@
+import 'package:cred_pages/categories_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neopop/widgets/buttons/neopop_button/neopop_button.dart';
@@ -72,8 +73,20 @@ class MyHomePage extends StatelessWidget {
               width: 300,
               child: NeoPopButton(
                 color: Colors.white,
-                onTapUp: () => HapticFeedback.vibrate(),
-                onTapDown: () => HapticFeedback.vibrate(),
+                onTapUp: () {
+                  HapticFeedback.vibrate();
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const Catagoriespage()),
+                  );
+                },
+                onTapDown: () {
+                  HapticFeedback.vibrate();
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const Catagoriespage()),
+                  );
+                },
                 child: const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   child: Row(
