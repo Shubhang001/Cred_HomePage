@@ -72,24 +72,20 @@ class _CatagoriespageState extends State<Catagoriespage> {
                       ),
                     ),
                   ),
-                  Center(
-                    child: Container(
-                        width: 25,
-                        height: 25,
-                        decoration: BoxDecoration(
-                          // Black background color
-                          border: Border.all(
-                            color: Colors.white, // White border color
-                            width: 1.0, // Border width
-                          ),
+                  Container(
+                      width: 25,
+                      height: 25,
+                      decoration: BoxDecoration(
+                        // Black background color
+                        border: Border.all(
+                          color: Colors.white, // White border color
+                          width: 1.0, // Border width
                         ),
-                        child: Center(
-                          child: IconButton(
-                              color: Colors.white,
-                              onPressed: () {},
-                              icon: const Icon(Icons.expand_more)),
-                        )),
-                  )
+                      ),
+                      child: IconButton(
+                          color: Colors.white,
+                          onPressed: () {},
+                          icon: const Icon(Icons.expand_more)))
                 ],
               ),
             ],
